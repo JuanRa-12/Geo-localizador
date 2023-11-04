@@ -1,1 +1,3 @@
 
+CREATE DATABASE geo;
+USE geo;
