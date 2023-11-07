@@ -32,3 +32,39 @@ FOREIGN KEY(fkidrefri) REFERENCES refrigerador(idrefri));
 
 /*Fin de creación de tablas*/
 
+/*Inicio de los procedures.*/
+
+/*Procedure para insertar datos*/
+DELIMITER //
+CREATE PROCEDURE InsertarTienda(
+    IN nombreTienda VARCHAR(50),
+    IN direccionTienda VARCHAR(100)
+)
+BEGIN
+    INSERT INTO tienda (nombre, direccion) VALUES (nombreTienda, direccionTienda);
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE InsertarRefrigerador(
+    IN nuserie INT,
+    IN caractRefrigerador VARCHAR(100),
+    IN gpsRefrigerador VARCHAR(50),
+    IN tiendaId INT
+)
+BEGIN
+    INSERT INTO refrigerador (nuserie, caract, GPS, fkidtienda) VALUES (nuserie, caractRefrigerador, gpsRefrigerador, tiendaId);
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE InsertarGPS(
+    IN latitud FLOAT,
+    IN longitud FLOAT,
+    IN refrigeradorId INT
+)
+BEGIN
+    INSERT INTO gps (latitud, longitud, fkidrefri) VALUES (latitud, longitud, refrigeradorId);
+END //
+DELIMITER ;
+/*Fin del procedure para insertar datos*/
