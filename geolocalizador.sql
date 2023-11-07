@@ -95,3 +95,15 @@ BEGIN
 END //
 DELIMITER ;
 /*Fin del procedure para consultar datos*/
+
+/*Inicio del procedure para actualizar datos*/
+DELIMITER //
+CREATE PROCEDURE ActualizarDireccionTienda(
+    IN tiendaId INT,
+    IN nuevaDireccion VARCHAR(100)
+)
+BEGIN
+    UPDATE tienda SET direccion = nuevaDireccion WHERE idtienda = tiendaId;
+END //
+DELIMITER ;
+/*Fin del procedure para actualizar datos*/
