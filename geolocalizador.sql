@@ -107,3 +107,14 @@ BEGIN
 END //
 DELIMITER ;
 /*Fin del procedure para actualizar datos*/
+
+/*Inicio del procedure para elimirar refrigeradores*/
+DELIMITER //
+CREATE PROCEDURE EliminarRefrigerador(
+    IN refrigeradorId INT
+)
+BEGIN
+    DELETE FROM refrigerador WHERE idrefri = refrigeradorId;
+END //
+DELIMITER ;
+/*Fin del procedure para eliminar refrigeradores*/
