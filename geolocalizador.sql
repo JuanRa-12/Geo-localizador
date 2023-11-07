@@ -68,3 +68,30 @@ BEGIN
 END //
 DELIMITER ;
 /*Fin del procedure para insertar datos*/
+
+/*Incio del procedure para consultar datos*/
+DELIMITER //
+CREATE PROCEDURE ConsultarTiendas()
+BEGIN
+    SELECT * FROM tienda;
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE ConsultarRefrigeradoresPorTienda(
+    IN tiendaId INT
+)
+BEGIN
+    SELECT * FROM refrigerador WHERE fkidtienda = tiendaId;
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE ConsultarUbicacionGPS(
+    IN refrigeradorId INT
+)
+BEGIN
+    SELECT latitud, longitud FROM gps WHERE fkidrefri = refrigeradorId;
+END //
+DELIMITER ;
+/*Fin del procedure para consultar datos*/
