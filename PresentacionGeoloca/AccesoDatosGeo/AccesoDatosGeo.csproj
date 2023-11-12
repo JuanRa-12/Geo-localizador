@@ -44,5 +44,11 @@
     <Compile Include="AccesoTienda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesGeo\EntidadesGeo.csproj">
+      <Project>{be528f37-49f9-4e78-95c1-2671ee4110c1}</Project>
+      <Name>EntidadesGeo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
