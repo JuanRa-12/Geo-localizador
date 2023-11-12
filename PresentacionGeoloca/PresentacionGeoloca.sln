@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntidadesGeo", "EntidadesGe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatosGeo", "AccesoDatosGeo\AccesoDatosGeo.csproj", "{1AAF094E-2E62-4887-920E-28823846B3FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManejajadoresGeo", "ManejajadoresGeo\ManejajadoresGeo.csproj", "{47690A50-14F4-4930-A395-7DC32DDDB8C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1AAF094E-2E62-4887-920E-28823846B3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AAF094E-2E62-4887-920E-28823846B3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AAF094E-2E62-4887-920E-28823846B3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47690A50-14F4-4930-A395-7DC32DDDB8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47690A50-14F4-4930-A395-7DC32DDDB8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47690A50-14F4-4930-A395-7DC32DDDB8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47690A50-14F4-4930-A395-7DC32DDDB8C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
