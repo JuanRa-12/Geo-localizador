@@ -104,6 +104,12 @@
     <Compile Include="FrmTienda.Designer.cs">
       <DependentUpon>FrmTienda.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTiendaAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTiendaAdd.Designer.cs">
+      <DependentUpon>FrmTiendaAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -128,6 +134,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FrmTienda.resx">
       <DependentUpon>FrmTienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTiendaAdd.resx">
+      <DependentUpon>FrmTiendaAdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
