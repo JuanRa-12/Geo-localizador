@@ -40,7 +40,7 @@ namespace ManejajadoresGeo
             //tabla.Columns.Insert(2, g.Boton(
             //    "Editar", Color.Green));
             //tabla.Columns.Insert(3, g.Boton("Borrar", Color.Red));
-            //tabla.Columns[0].Visible = false;
+            tabla.Columns[0].Visible = false;
         }
     }
 }

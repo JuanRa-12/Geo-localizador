@@ -54,3 +54,4 @@ C:\Users\prado\OneDrive\Documentos\Proyecto_Geo\Geo-localizador\PresentacionGeol
 C:\Users\prado\OneDrive\Documentos\Proyecto_Geo\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.csproj.CopyComplete
 C:\Users\prado\OneDrive\Documentos\Proyecto_Geo\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.exe
 C:\Users\prado\OneDrive\Documentos\Proyecto_Geo\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.pdb
+C:\Users\prado\OneDrive\Documentos\Proyecto_Geo\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.FrmTiendaAdd.resources

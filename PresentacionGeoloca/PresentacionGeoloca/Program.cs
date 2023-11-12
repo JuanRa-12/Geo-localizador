@@ -13,7 +13,7 @@ namespace PresentacionGeoloca
         public static void Main()
         {
             Application.EnableVisualStyles();
-            Application.Run(new FrmTienda());
+            Application.Run(new FrmTienda ());
         }
     }
 }

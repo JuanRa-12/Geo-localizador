@@ -30,7 +30,7 @@ namespace AccesoDatosGeo
         public DataSet Mostrar(string filtro)
         {
             return b.Obtener
-                (string.Format("call ConsultarTiendas('%{0}%')",
+                (string.Format("call showTienda('%{0}%')",
                 filtro), "tienda");
         }
     }
