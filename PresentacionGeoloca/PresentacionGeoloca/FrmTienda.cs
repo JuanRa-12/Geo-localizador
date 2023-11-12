@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using EntidadesGeo;
 using ManejajadoresGeo;
 using AccesoDatosGeo;
+using Org.BouncyCastle.Math;
 
 namespace PresentacionGeoloca
 {
@@ -33,6 +34,17 @@ namespace PresentacionGeoloca
         {
             Actualizar();
         }
+
+        private void dtgTienda_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            fila = e.RowIndex;
+            col = e.ColumnIndex;
+            //pais.Ncorrelativo = int.Parse(dtgPais.Rows[fila]
+            //tienda.Idtienda = int.Parse(dtgTienda.Rows[fila].Cells[0].Value.ToString());
+            tienda.Nombre = dtgTienda.Rows[fila].Cells[0].Value.ToString();
+            tienda.Direccion = dtgTienda.Rows[fila].Cells[1].Value.ToString();
+        }
+
         void Actualizar()
         {
             mt.Mostrar(dtgTienda, txtBuscar.Text);

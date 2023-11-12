@@ -97,6 +97,7 @@
             this.dtgTienda.ReadOnly = true;
             this.dtgTienda.Size = new System.Drawing.Size(981, 366);
             this.dtgTienda.TabIndex = 15;
+            this.dtgTienda.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTienda_CellEnter);
             // 
             // btnAgregar
             // 
