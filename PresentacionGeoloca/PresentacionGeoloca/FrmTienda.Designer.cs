@@ -33,12 +33,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dtgPais = new System.Windows.Forms.DataGridView();
+            this.dtgTienda = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgPais)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTienda)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,6 +73,7 @@
             this.btnRegresar.Size = new System.Drawing.Size(48, 49);
             this.btnRegresar.TabIndex = 3;
             this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // panel2
             // 
@@ -83,19 +84,19 @@
             this.panel2.Size = new System.Drawing.Size(658, 10);
             this.panel2.TabIndex = 17;
             // 
-            // dtgPais
+            // dtgTienda
             // 
-            this.dtgPais.AllowUserToAddRows = false;
-            this.dtgPais.AllowUserToDeleteRows = false;
-            this.dtgPais.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgPais.BackgroundColor = System.Drawing.Color.White;
-            this.dtgPais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgPais.Location = new System.Drawing.Point(21, 152);
-            this.dtgPais.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dtgPais.Name = "dtgPais";
-            this.dtgPais.ReadOnly = true;
-            this.dtgPais.Size = new System.Drawing.Size(981, 366);
-            this.dtgPais.TabIndex = 15;
+            this.dtgTienda.AllowUserToAddRows = false;
+            this.dtgTienda.AllowUserToDeleteRows = false;
+            this.dtgTienda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgTienda.BackgroundColor = System.Drawing.Color.White;
+            this.dtgTienda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTienda.Location = new System.Drawing.Point(21, 152);
+            this.dtgTienda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgTienda.Name = "dtgTienda";
+            this.dtgTienda.ReadOnly = true;
+            this.dtgTienda.Size = new System.Drawing.Size(981, 366);
+            this.dtgTienda.TabIndex = 15;
             // 
             // btnAgregar
             // 
@@ -134,7 +135,7 @@
             this.ClientSize = new System.Drawing.Size(1019, 554);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dtgPais);
+            this.Controls.Add(this.dtgTienda);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
@@ -143,9 +144,10 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmTienda";
             this.Text = "FrmTienda";
+            this.Load += new System.EventHandler(this.FrmTienda_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgPais)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTienda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,7 +159,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dtgPais;
+        private System.Windows.Forms.DataGridView dtgTienda;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
