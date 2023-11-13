@@ -118,3 +118,28 @@ BEGIN
 END //
 DELIMITER ;
 /*Fin del procedure para eliminar refrigeradores*/
+
+SELECT * FROM tienda;
+INSERT INTO tienda(nombre,direccion) VALUES('Abarrotes Torres','Calle 5 de mayo');
+CALL ConsultarTiendas();
+USE geo;
+
+
+
+
+
+
+/*Otras cosas*/
+/*Procedure para mostrar Tienda*/
+delimiter ;;
+create procedure showTienda( in _nombre VARCHAR(60)) 
+
+begin 
+
+select * from tienda where nombre like _nombre order by nombre; 
+
+END;; 
+/*FIN del Procedure para mostrar Tienda*/
+
+/*Mandar a llamar el Procedure para mostrar Tienda con una tienda con una b en su nombre sin importar donde este*/
+CALL showTienda('%b%');
