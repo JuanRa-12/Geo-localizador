@@ -45,6 +45,11 @@ namespace PresentacionGeoloca
             tienda.Direccion = dtgTienda.Rows[fila].Cells[2].Value.ToString();
         }
 
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            Actualizar();
+        }
+
         void Actualizar()
         {
             mt.Mostrar(dtgTienda, txtBuscar.Text);

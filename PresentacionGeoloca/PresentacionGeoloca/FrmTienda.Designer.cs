@@ -59,7 +59,7 @@
             this.label2.Location = new System.Drawing.Point(462, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 33);
+            this.label2.Size = new System.Drawing.Size(131, 42);
             this.label2.TabIndex = 4;
             this.label2.Text = "Paises";
             // 
@@ -95,6 +95,7 @@
             this.dtgTienda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtgTienda.Name = "dtgTienda";
             this.dtgTienda.ReadOnly = true;
+            this.dtgTienda.RowHeadersWidth = 51;
             this.dtgTienda.Size = new System.Drawing.Size(981, 366);
             this.dtgTienda.TabIndex = 15;
             this.dtgTienda.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTienda_CellEnter);
@@ -115,8 +116,9 @@
             this.txtBuscar.Location = new System.Drawing.Point(166, 99);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(750, 26);
+            this.txtBuscar.Size = new System.Drawing.Size(750, 30);
             this.txtBuscar.TabIndex = 12;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label1
             // 
@@ -125,13 +127,13 @@
             this.label1.Location = new System.Drawing.Point(18, 99);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 20);
+            this.label1.Size = new System.Drawing.Size(127, 25);
             this.label1.TabIndex = 13;
             this.label1.Text = "Buscar Pais";
             // 
             // FrmTienda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1019, 554);
             this.Controls.Add(this.panel1);

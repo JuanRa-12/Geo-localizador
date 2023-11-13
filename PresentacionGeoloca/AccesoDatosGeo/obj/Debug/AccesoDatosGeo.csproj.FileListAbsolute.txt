@@ -43,3 +43,47 @@ C:\Users\prado\OneDrive\Documentos\Proyecto_Geo\Geo-localizador\PresentacionGeol
 C:\Users\prado\OneDrive\Documentos\Proyecto_Geo\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.csproj.CopyComplete
 C:\Users\prado\OneDrive\Documentos\Proyecto_Geo\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.dll
 C:\Users\prado\OneDrive\Documentos\Proyecto_Geo\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.pdb
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\AccesoDatosGeo.dll.config
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\AccesoDatosGeo.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\AccesoDatosGeo.pdb
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\EntidadesGeo.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\Google.Protobuf.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\MySql.Data.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Buffers.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.IO.Pipelines.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Memory.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\ZstdSharp.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\EntidadesGeo.pdb
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\EntidadesGeo.dll.config
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\ConectarBd.pdb
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\ConectarBd.dll.config
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\Google.Protobuf.pdb
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\Google.Protobuf.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\MySql.Data.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Buffers.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.IO.Pipelines.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Memory.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.csproj.AssemblyReference.cache
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.csproj.CoreCompileInputs.cache
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.csproj.CopyComplete
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.pdb
