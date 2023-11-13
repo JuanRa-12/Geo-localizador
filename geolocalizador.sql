@@ -1,7 +1,8 @@
 CREATE DATABASE geo;/*Creación de la BD para el geolocalizador*/
 USE geo;/*Uso de la BD*/
 
-/*Creacion de tablas para la BD*/
+
+/*Creacion de tablas para la BD ------------------------------------------------------------------*/
 
 /*Tabla de tienda*/
 CREATE TABLE tienda(
@@ -28,13 +29,12 @@ longitud FLOAT,
 fkidrefri INT,
 FOREIGN KEY(fkidrefri) REFERENCES refrigerador(idrefri));
 /*Fin de la tabla de GPS*/
+/*Fin de creación de tablas------------------------------------------------------------------------*/
 
 
-/*Fin de creación de tablas*/
-
-/*Inicio de los procedures.*/
-
-/*Procedure para insertar datos*/
+/*Inicio de los procedures.--------------------------------------------------------------------*/
+/*+++++++++++++++++++++++++++ Procedures para insertar Datos*/
+/*Procedure para insertar datos en tienda*/
 DELIMITER //
 CREATE PROCEDURE InsertarTienda(
     IN nombreTienda VARCHAR(50),
@@ -43,6 +43,9 @@ CREATE PROCEDURE InsertarTienda(
 BEGIN
     INSERT INTO tienda (nombre, direccion) VALUES (nombreTienda, direccionTienda);
 END //
+/*FIN de Procedure para insertar datos en tienda*/
+
+/*Procedure para insertar datos en refrigerador*/
 DELIMITER ;
 
 DELIMITER //
@@ -55,6 +58,9 @@ CREATE PROCEDURE InsertarRefrigerador(
 BEGIN
     INSERT INTO refrigerador (nuserie, caract, GPS, fkidtienda) VALUES (nuserie, caractRefrigerador, gpsRefrigerador, tiendaId);
 END //
+/*FIN de Procedure para insertar datos en refrigerador*/
+
+/*Procedure para insertar datos en GPS*/
 DELIMITER ;
 
 DELIMITER //
@@ -67,8 +73,10 @@ BEGIN
     INSERT INTO gps (latitud, longitud, fkidrefri) VALUES (latitud, longitud, refrigeradorId);
 END //
 DELIMITER ;
-/*Fin del procedure para insertar datos*/
+/*FIN de Procedure para insertar datos en GPS*/
+/*+++++++++++++++++++++++++++ FIN de Procedures para insertar Datos*/
 
+/*+++++++++++++++++++++++++++ Procedures para consultar Datos*/
 /*Incio del procedure para consultar datos*/
 DELIMITER //
 CREATE PROCEDURE ConsultarTiendas()
@@ -96,6 +104,30 @@ END //
 DELIMITER ;
 /*Fin del procedure para consultar datos*/
 
+/*Procedure para mostrar Tienda*/
+delimiter ;;
+create procedure showTienda( in _nombre VARCHAR(60)) 
+
+begin 
+
+select * from tienda where nombre like _nombre order by idtienda; 
+
+END;; 
+/*FIN del Procedure para mostrar Tienda*/
+
+/*Procedure para mostrar refrigerador*/
+delimiter ;;
+create procedure showRefrigerador( in _caract VARCHAR(100)) 
+
+begin 
+
+select * from refrigerador where caract like _caract ORDER by nuserie;
+
+END;; 
+/*FIN del Procedure para mostrar refrigerador*/
+/*+++++++++++++++++++++++++++ FIN de Procedures para consultar Datos*/
+
+/*+++++++++++++++++++++++++++ inicio de Procedures para actualizar Datos*/
 /*Inicio del procedure para actualizar datos*/
 DELIMITER //
 CREATE PROCEDURE ActualizarDireccionTienda(
@@ -106,8 +138,10 @@ BEGIN
     UPDATE tienda SET direccion = nuevaDireccion WHERE idtienda = tiendaId;
 END //
 DELIMITER ;
-/*Fin del procedure para actualizar datos*/
+/*FIN del procedure para actualizar datos*/
+/*+++++++++++++++++++++++++++ FIN de Procedures para actualizar Datos*/
 
+/*+++++++++++++++++++++++++++ inicio de Procedures para Eliminar Datos*/
 /*Inicio del procedure para elimirar refrigeradores*/
 DELIMITER //
 CREATE PROCEDURE EliminarRefrigerador(
@@ -118,28 +152,31 @@ BEGIN
 END //
 DELIMITER ;
 /*Fin del procedure para eliminar refrigeradores*/
+/*+++++++++++++++++++++++++++ FIN de Procedures para Eliminar Datos*/
+/*FIN de los procedures.--------------------------------------------------------------------*/
 
+
+/*Otras cosas--------------------------------------------------------------------------------*/
+
+USE geo; /**/
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm     Inicio de Tabla y procedures de tienda*/
 SELECT * FROM tienda;
-INSERT INTO tienda(nombre,direccion) VALUES('Abarrotes Torres','Calle 5 de mayo');
+
+INSERT INTO tienda(nombre,direccion) VALUES('Abarrotes Torres','Calle 5 de mayo'); 
+call InsertarTienda('Minisuper el Camaron','Avenida Guadalajara'); 
 CALL ConsultarTiendas();
-USE geo;
+CALL showTienda('%');
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm      FIN de Tabla y procedures de tienda*/
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm     Inicio de Tabla y procedures de refrigerador*/
+SELECT * FROM refrigerador;
+
+INSERT INTO refrigerador VALUES (NULL,1073,'Refrigerador de doble puerta con cocacolas','latitud y longitud',1);
+call InsertarRefrigerador(1345,'Refrigerador simple de jugos','latitud y longitud',2); 
+CALL showRefrigerador('%');
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm      FIN de Tabla y procedures de tienda*/
 
 
 
-
-
-
-/*Otras cosas*/
-/*Procedure para mostrar Tienda*/
-delimiter ;;
-create procedure showTienda( in _nombre VARCHAR(60)) 
-
-begin 
-
-select * from tienda where nombre like _nombre order by nombre; 
-
-END;; 
-/*FIN del Procedure para mostrar Tienda*/
-
-/*Mandar a llamar el Procedure para mostrar Tienda con una tienda con una b en su nombre sin importar donde este*/
-CALL showTienda('%b%');
