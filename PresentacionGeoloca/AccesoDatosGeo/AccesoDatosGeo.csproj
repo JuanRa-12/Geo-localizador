@@ -96,6 +96,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoRefrigerador.cs" />
     <Compile Include="AccesoTienda.cs" />
     <Compile Include="IEntidades.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

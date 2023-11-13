@@ -14,15 +14,15 @@ using Org.BouncyCastle.Math;
 
 namespace PresentacionGeoloca
 {
-    public partial class FrmTienda : Form
+    public partial class Frmtienda : Form
     {
-        ManejadoresTienda mt;
-        public static Tienda tienda = new Tienda(0,"", "");
+        ManejadoresRefrigerador mr;
+        public static Refrigerador refri = new Refrigerador(0,0,"", "",0);
         int fila = 0, col = 0;
-        public FrmTienda()
+        public Frmtienda()
         {
             InitializeComponent();
-            mt = new ManejadoresTienda();
+            mr = new ManejadoresRefrigerador();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -40,9 +40,11 @@ namespace PresentacionGeoloca
             fila = e.RowIndex;
             col = e.ColumnIndex;
             //pais.Ncorrelativo = int.Parse(dtgPais.Rows[fila]
-            tienda.Idtienda = int.Parse(dtgTienda.Rows[fila].Cells[0].Value.ToString());
-            tienda.Nombre = dtgTienda.Rows[fila].Cells[1].Value.ToString();
-            tienda.Direccion = dtgTienda.Rows[fila].Cells[2].Value.ToString();
+            refri.Idrefri = int.Parse(dtgRefri.Rows[fila].Cells[0].Value.ToString());
+            refri.Nuserie = int.Parse(dtgRefri.Rows[fila].Cells[1].Value.ToString());
+            refri.Caract = dtgRefri.Rows[fila].Cells[2].Value.ToString();
+            refri.GPS = dtgRefri.Rows[fila].Cells[3].Value.ToString();
+            refri.Fkidtienda = int.Parse(dtgRefri.Rows[fila].Cells[4].Value.ToString());
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
@@ -50,9 +52,17 @@ namespace PresentacionGeoloca
             Actualizar();
         }
 
+        private void btnInsertarT_Click(object sender, EventArgs e)
+        {
+            FrmTiendaAdd f2 = new FrmTiendaAdd();
+            f2.ShowDialog();
+        }
+
         void Actualizar()
         {
-            mt.Mostrar(dtgTienda, txtBuscar.Text);
-        }
+            mr.Mostrar(dtgRefri, txtBuscar.Text);
+        }    
+
+
     }
 }

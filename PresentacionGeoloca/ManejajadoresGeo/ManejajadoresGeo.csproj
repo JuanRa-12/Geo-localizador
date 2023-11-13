@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IManejador.cs" />
+    <Compile Include="ManejadoresRefrigerador.cs" />
     <Compile Include="ManejadoresTienda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

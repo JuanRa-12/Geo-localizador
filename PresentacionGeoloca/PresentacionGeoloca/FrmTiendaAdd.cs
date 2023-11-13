@@ -22,15 +22,17 @@ namespace PresentacionGeoloca
             mt = new ManejadoresTienda();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+       
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            mt.Guardar(new Tienda(FrmTienda.tienda.Idtienda, txtNombre.Text,txtDireccion.Text));
-            Close();
+            //mt.Guardar(new Tienda(Frmtienda.tienda.Idtienda, txtNombre.Text,txtDireccion.Text));
+            //Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

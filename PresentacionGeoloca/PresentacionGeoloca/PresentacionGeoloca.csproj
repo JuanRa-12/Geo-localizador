@@ -98,11 +98,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmTienda.cs">
+    <Compile Include="FrmRefrigeradorAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTienda.Designer.cs">
-      <DependentUpon>FrmTienda.cs</DependentUpon>
+    <Compile Include="FrmRefrigeradorAdd.Designer.cs">
+      <DependentUpon>FrmRefrigeradorAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmtienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmtienda.Designer.cs">
+      <DependentUpon>Frmtienda.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTiendaAdd.cs">
       <SubType>Form</SubType>
@@ -132,8 +138,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmTienda.resx">
-      <DependentUpon>FrmTienda.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRefrigeradorAdd.resx">
+      <DependentUpon>FrmRefrigeradorAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmtienda.resx">
+      <DependentUpon>Frmtienda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTiendaAdd.resx">
       <DependentUpon>FrmTiendaAdd.cs</DependentUpon>
