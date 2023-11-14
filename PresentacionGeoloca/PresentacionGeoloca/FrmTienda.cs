@@ -68,6 +68,16 @@ namespace PresentacionGeoloca
         private void btnMapa_Click(object sender, EventArgs e)
         {
             frmMap f4 = new frmMap();
+
+            // Obtener el Nuserie seleccionado
+            int nuserieSeleccionado = refri.Nuserie;
+            int idrefriSeleccionado = refri.Idrefri;
+
+            // Asignar el Nuserie al formulario frmMap
+            f4.NuserieSeleccionado = nuserieSeleccionado;
+            f4.IdrefriSeleccionado = idrefriSeleccionado;
+
+            // Mostrar el formulario frmMap
             f4.ShowDialog();
         }
 

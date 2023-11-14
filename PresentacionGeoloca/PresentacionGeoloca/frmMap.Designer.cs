@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblRefri = new System.Windows.Forms.Label();
+            this.timerGps = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +47,7 @@
             this.label2.Location = new System.Drawing.Point(439, 10);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(261, 39);
+            this.label2.Size = new System.Drawing.Size(250, 38);
             this.label2.TabIndex = 4;
             this.label2.Text = "Insertar Tienda";
             // 
@@ -79,7 +83,7 @@
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(12, 82);
+            this.gMapControl1.Location = new System.Drawing.Point(12, 169);
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 2;
             this.gMapControl1.MinZoom = 2;
@@ -93,15 +97,48 @@
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(847, 640);
+            this.gMapControl1.Size = new System.Drawing.Size(847, 553);
             this.gMapControl1.TabIndex = 20;
             this.gMapControl1.Zoom = 0D;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(75, 107);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(220, 38);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Refrigerador:";
+            // 
+            // lblRefri
+            // 
+            this.lblRefri.AutoSize = true;
+            this.lblRefri.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRefri.ForeColor = System.Drawing.Color.White;
+            this.lblRefri.Location = new System.Drawing.Point(307, 107);
+            this.lblRefri.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblRefri.Name = "lblRefri";
+            this.lblRefri.Size = new System.Drawing.Size(27, 38);
+            this.lblRefri.TabIndex = 22;
+            this.lblRefri.Text = ".";
+            // 
+            // timerGps
+            // 
+            this.timerGps.Enabled = true;
+            this.timerGps.Interval = 2000;
+            this.timerGps.Tick += new System.EventHandler(this.timerGps_Tick);
             // 
             // frmMap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(1065, 744);
+            this.Controls.Add(this.lblRefri);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.gMapControl1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
@@ -113,6 +150,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -122,5 +160,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblRefri;
+        private System.Windows.Forms.Timer timerGps;
     }
 }
