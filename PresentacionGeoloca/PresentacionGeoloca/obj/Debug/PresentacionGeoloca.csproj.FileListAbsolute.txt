@@ -113,3 +113,4 @@ C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\Prese
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.exe
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.pdb
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.FrmRefrigeradorAdd.resources
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.frmPrueba.resources

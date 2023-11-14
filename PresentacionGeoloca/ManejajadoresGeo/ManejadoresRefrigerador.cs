@@ -21,7 +21,15 @@ namespace ManejajadoresGeo
 
         public void Guardar(dynamic Entidad)
         {
-            throw new NotImplementedException();
+            try
+            {
+                ar.Guardar(Entidad);
+                g.Mensaje("Tienda Guardada con exito", "!Atencion", MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                g.Mensaje("No se guardo nada", "!Atencion", MessageBoxIcon.Error);
+            }
         }
 
         public void Mostrar(DataGridView tabla, string filtro)

@@ -28,8 +28,7 @@ namespace ManejajadoresGeo
         public void Guardar(dynamic Entidad)
         {
             at.Guardar(Entidad);
-            g.Mensaje("Pais Guardado", "!Atencion",
-                MessageBoxIcon.Information);
+            g.Mensaje("Tienda Guardada con exito", "!Atencion",MessageBoxIcon.Information);
         }
 
         public void Mostrar(DataGridView tabla, string filtro)

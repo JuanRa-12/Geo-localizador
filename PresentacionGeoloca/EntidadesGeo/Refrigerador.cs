@@ -8,19 +8,19 @@ namespace EntidadesGeo
 {
     public class Refrigerador
     {
-        public Refrigerador(int idrefri, int nuserie, string caract, string gPS, int fkidtienda)
+        public Refrigerador(int idrefri, int nuserie, string caract, int fkidgps, int fkidtienda)
         {
             Idrefri = idrefri;
             Nuserie = nuserie;
             Caract = caract;
-            GPS = gPS;
+            Fkidgps = fkidgps;
             Fkidtienda = fkidtienda;
         }
 
         public int Idrefri { get; set; }
         public int Nuserie { get; set; }
         public string Caract { get; set; }
-        public string GPS { get; set; }
+        public int Fkidgps { get; set; }
         public int Fkidtienda { get; set; }
     }
 }

@@ -57,7 +57,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1019, 70);
-            this.panel1.TabIndex = 16;
+            this.panel1.TabIndex = 0;
             // 
             // label2
             // 
@@ -68,7 +68,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(306, 42);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Geo Localizador";
             // 
             // btnRegresar
@@ -79,7 +79,7 @@
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(48, 49);
-            this.btnRegresar.TabIndex = 3;
+            this.btnRegresar.TabIndex = 4;
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
@@ -96,7 +96,7 @@
             this.dtgRefri.ReadOnly = true;
             this.dtgRefri.RowHeadersWidth = 51;
             this.dtgRefri.Size = new System.Drawing.Size(589, 393);
-            this.dtgRefri.TabIndex = 15;
+            this.dtgRefri.TabIndex = 5;
             this.dtgRefri.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTienda_CellEnter);
             // 
             // txtBuscar
@@ -105,7 +105,7 @@
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(58, 30);
-            this.txtBuscar.TabIndex = 12;
+            this.txtBuscar.TabIndex = 0;
             this.txtBuscar.Visible = false;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
@@ -130,7 +130,7 @@
             this.btnInsertarT.Location = new System.Drawing.Point(642, 182);
             this.btnInsertarT.Name = "btnInsertarT";
             this.btnInsertarT.Size = new System.Drawing.Size(234, 50);
-            this.btnInsertarT.TabIndex = 17;
+            this.btnInsertarT.TabIndex = 1;
             this.btnInsertarT.Text = "Insertar Tienda";
             this.btnInsertarT.UseVisualStyleBackColor = false;
             this.btnInsertarT.Click += new System.EventHandler(this.btnInsertarT_Click);
@@ -143,10 +143,11 @@
             this.btnInsertarR.Location = new System.Drawing.Point(642, 264);
             this.btnInsertarR.Name = "btnInsertarR";
             this.btnInsertarR.Size = new System.Drawing.Size(234, 67);
-            this.btnInsertarR.TabIndex = 18;
+            this.btnInsertarR.TabIndex = 2;
             this.btnInsertarR.Text = "Insertar Refrigerador";
             this.btnInsertarR.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnInsertarR.UseVisualStyleBackColor = false;
+            this.btnInsertarR.Click += new System.EventHandler(this.btnInsertarR_Click);
             // 
             // btnMapa
             // 
@@ -156,7 +157,7 @@
             this.btnMapa.Location = new System.Drawing.Point(642, 361);
             this.btnMapa.Name = "btnMapa";
             this.btnMapa.Size = new System.Drawing.Size(234, 44);
-            this.btnMapa.TabIndex = 19;
+            this.btnMapa.TabIndex = 3;
             this.btnMapa.Text = "Mapa de Ubicacion";
             this.btnMapa.UseVisualStyleBackColor = false;
             // 

@@ -24,7 +24,7 @@ namespace AccesoDatosGeo
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("call InsertarTienda('{0}','{1}'", Entidad.Nombre, Entidad.Direccion));
+            b.comando(string.Format("call InsertarTienda('{0}','{1}')", Entidad.Nombre, Entidad.Direccion));
         }
 
         public DataSet Mostrar(string filtro)

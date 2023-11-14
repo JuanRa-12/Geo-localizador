@@ -17,7 +17,7 @@ namespace PresentacionGeoloca
     public partial class Frmtienda : Form
     {
         ManejadoresRefrigerador mr;
-        public static Refrigerador refri = new Refrigerador(0,0,"", "",0);
+        public static Refrigerador refri = new Refrigerador(0,0,"",0,0);
         int fila = 0, col = 0;
         public Frmtienda()
         {
@@ -43,7 +43,7 @@ namespace PresentacionGeoloca
             refri.Idrefri = int.Parse(dtgRefri.Rows[fila].Cells[0].Value.ToString());
             refri.Nuserie = int.Parse(dtgRefri.Rows[fila].Cells[1].Value.ToString());
             refri.Caract = dtgRefri.Rows[fila].Cells[2].Value.ToString();
-            refri.GPS = dtgRefri.Rows[fila].Cells[3].Value.ToString();
+            refri.Fkidgps = int.Parse(dtgRefri.Rows[fila].Cells[3].Value.ToString());
             refri.Fkidtienda = int.Parse(dtgRefri.Rows[fila].Cells[4].Value.ToString());
         }
 
@@ -58,7 +58,14 @@ namespace PresentacionGeoloca
             f2.ShowDialog();
         }
 
-        void Actualizar()
+        private void btnInsertarR_Click(object sender, EventArgs e)
+        {
+            FrmRefrigeradorAdd f3 = new FrmRefrigeradorAdd();
+            f3.Owner = this;
+            f3.ShowDialog();
+        }
+
+        public void Actualizar()
         {
             mr.Mostrar(dtgRefri, txtBuscar.Text);
         }    

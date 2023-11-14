@@ -26,13 +26,27 @@ namespace PresentacionGeoloca
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            //mt.Guardar(new Tienda(Frmtienda.tienda.Idtienda, txtNombre.Text,txtDireccion.Text));
-            //Close();
+            try
+            {
+                mt.Guardar(new Tienda(txtNombre.Text, txtDireccion.Text));
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("No funciono");
+            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmTiendaAdd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

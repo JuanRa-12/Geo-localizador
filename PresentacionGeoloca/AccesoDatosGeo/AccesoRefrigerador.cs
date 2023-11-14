@@ -18,7 +18,7 @@ namespace AccesoDatosGeo
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("call InsertarRefrigerador('{0}','{1}','{2}','{3}'", Entidad.Nuserie, Entidad.Caract, Entidad.GPS, Entidad.Fkidtienda));
+            b.comando(string.Format("call InsertarRefrigerador({0},'{1}',{2},{3})", Entidad.Nuserie, Entidad.Caract, Entidad.Fkidgps, Entidad.Fkidtienda));
         }
 
         public DataSet Mostrar(string filtro)
