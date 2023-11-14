@@ -26,8 +26,8 @@ FOREIGN KEY(fkidgps) REFERENCES gps(idgps));
 CREATE TABLE gps(
 idgps INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 nombre VARCHAR(50),
-latitud FLOAT,
-longitud FLOAT);
+latitud double,
+longitud double);
 SELECT * FROM gps
 /*Fin de la tabla de GPS*/
 /*Fin de creación de tablas------------------------------------------------------------------------*/
@@ -175,6 +175,9 @@ CALL showTienda('%');
 SELECT * FROM refrigerador;
 
 INSERT INTO refrigerador VALUES (NULL,1073,'Refrigerador de doble puerta con cocacolas',1,1);
+
+
+UPDATE refrigerador SET fkidgps = 2, fkidtienda = 2 WHERE idrefri = 1;
 call InsertarRefrigerador(1345,'Refrigerador simple de jugos',1,1); 
 CALL showRefrigerador('%');
 /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm      FIN de Tabla y procedures de tienda*/
@@ -185,4 +188,9 @@ call InsertarGPS();
 SELECT * FROM gps;
 /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm     FIN de Tabla y procedures de GPS*/
 
+UPDATE gps SET latitud = 21.3615990568025, longitud = -101.93493908414524 WHERE idgps = 1;
+UPDATE gps SET latitud = 21.363413487143276, longitud = -101.93531321594494 WHERE idgps = 2;
+21.372872, -101.924741
+
+UPDATE gps SET latitud = 21.372872, longitud = -101.924741 WHERE idgps = 1;
 
