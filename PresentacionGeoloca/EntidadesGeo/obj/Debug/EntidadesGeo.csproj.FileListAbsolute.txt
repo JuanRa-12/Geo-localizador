@@ -76,3 +76,5 @@ C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\Entid
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\EntidadesGeo\obj\Debug\EntidadesGeo.csproj.CopyComplete
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\EntidadesGeo\obj\Debug\EntidadesGeo.dll
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\EntidadesGeo\obj\Debug\EntidadesGeo.pdb
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\EntidadesGeo\bin\Debug\GMap.NET.Core.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\EntidadesGeo\bin\Debug\GMap.NET.WindowsForms.dll

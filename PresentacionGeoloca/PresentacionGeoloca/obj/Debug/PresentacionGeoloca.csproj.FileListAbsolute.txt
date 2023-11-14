@@ -103,8 +103,6 @@ C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\Prese
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\bin\Debug\ConectarBd.pdb
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\bin\Debug\ConectarBd.dll.config
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.csproj.AssemblyReference.cache
-C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.csproj.SuggestedBindingRedirects.cache
-C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.exe.config
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.FrmTienda.resources
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.FrmTiendaAdd.resources
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.csproj.GenerateResource.cache
@@ -114,3 +112,6 @@ C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\Prese
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.pdb
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.FrmRefrigeradorAdd.resources
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.frmPrueba.resources
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\bin\Debug\GMap.NET.Core.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\PresentacionGeoloca\obj\Debug\PresentacionGeoloca.frmMap.resources

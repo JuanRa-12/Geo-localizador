@@ -160,6 +160,7 @@
             this.btnMapa.TabIndex = 3;
             this.btnMapa.Text = "Mapa de Ubicacion";
             this.btnMapa.UseVisualStyleBackColor = false;
+            this.btnMapa.Click += new System.EventHandler(this.btnMapa_Click);
             // 
             // pictureBox1
             // 

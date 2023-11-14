@@ -95,3 +95,5 @@ C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\Manej
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\ManejajadoresGeo\obj\Debug\ManejajadoresGeo.csproj.CopyComplete
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\ManejajadoresGeo\obj\Debug\ManejajadoresGeo.dll
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\ManejajadoresGeo\obj\Debug\ManejajadoresGeo.pdb
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\ManejajadoresGeo\bin\Debug\GMap.NET.Core.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\ManejajadoresGeo\bin\Debug\GMap.NET.WindowsForms.dll

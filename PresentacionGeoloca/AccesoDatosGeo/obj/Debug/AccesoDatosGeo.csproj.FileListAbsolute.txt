@@ -87,3 +87,5 @@ C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\Acces
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.csproj.CopyComplete
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.dll
 C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\obj\Debug\AccesoDatosGeo.pdb
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\GMap.NET.Core.dll
+C:\Users\SAGID\Documents\intento prron\Geo-localizador\PresentacionGeoloca\AccesoDatosGeo\bin\Debug\GMap.NET.WindowsForms.dll

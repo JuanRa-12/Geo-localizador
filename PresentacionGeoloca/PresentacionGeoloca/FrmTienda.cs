@@ -65,6 +65,12 @@ namespace PresentacionGeoloca
             f3.ShowDialog();
         }
 
+        private void btnMapa_Click(object sender, EventArgs e)
+        {
+            frmMap f4 = new frmMap();
+            f4.ShowDialog();
+        }
+
         public void Actualizar()
         {
             mr.Mostrar(dtgRefri, txtBuscar.Text);
