@@ -16,18 +16,19 @@ CREATE TABLE refrigerador(
 idrefri INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 nuserie INT,
 caract VARCHAR(100),
-GPS VARCHAR(50),
+fkidgps int,
 fkidtienda INT,
-FOREIGN KEY(fkidtienda) REFERENCES tienda(idtienda));
+FOREIGN KEY(fkidtienda) REFERENCES tienda(idtienda),
+FOREIGN KEY(fkidgps) REFERENCES gps(idgps));
 /*Fin de la tabla de refrigerador*/
 
 /*Tabla de GPS*/
 CREATE TABLE gps(
 idgps INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+nombre VARCHAR(50),
 latitud FLOAT,
-longitud FLOAT,
-fkidrefri INT,
-FOREIGN KEY(fkidrefri) REFERENCES refrigerador(idrefri));
+longitud FLOAT);
+SELECT * FROM gps
 /*Fin de la tabla de GPS*/
 /*Fin de creación de tablas------------------------------------------------------------------------*/
 
@@ -36,6 +37,7 @@ FOREIGN KEY(fkidrefri) REFERENCES refrigerador(idrefri));
 /*+++++++++++++++++++++++++++ Procedures para insertar Datos*/
 /*Procedure para insertar datos en tienda*/
 DELIMITER //
+drop PROCEDURE if EXISTS InsertarTienda;
 CREATE PROCEDURE InsertarTienda(
     IN nombreTienda VARCHAR(50),
     IN direccionTienda VARCHAR(100)
@@ -46,31 +48,30 @@ END //
 /*FIN de Procedure para insertar datos en tienda*/
 
 /*Procedure para insertar datos en refrigerador*/
-DELIMITER ;
-
 DELIMITER //
+DROP PROCEDURE if EXISTS InsertarRefrigerador;
 CREATE PROCEDURE InsertarRefrigerador(
     IN nuserie INT,
     IN caractRefrigerador VARCHAR(100),
-    IN gpsRefrigerador VARCHAR(50),
+    IN gpsRefrigerador INT,
     IN tiendaId INT
 )
 BEGIN
-    INSERT INTO refrigerador (nuserie, caract, GPS, fkidtienda) VALUES (nuserie, caractRefrigerador, gpsRefrigerador, tiendaId);
+    INSERT INTO refrigerador (nuserie, caract, fkidgps, fkidtienda) VALUES (nuserie, caractRefrigerador, gpsRefrigerador, tiendaId);
 END //
+DELIMITER ;
 /*FIN de Procedure para insertar datos en refrigerador*/
 
 /*Procedure para insertar datos en GPS*/
-DELIMITER ;
-
 DELIMITER //
+DROP PROCEDURE IF EXISTS InsertarGPS;
 CREATE PROCEDURE InsertarGPS(
-    IN latitud FLOAT,
-    IN longitud FLOAT,
-    IN refrigeradorId INT
+    IN nombre VARCHAR(50),
+     IN latitud FLOAT,
+    IN longitud FLOAT
 )
 BEGIN
-    INSERT INTO gps (latitud, longitud, fkidrefri) VALUES (latitud, longitud, refrigeradorId);
+    INSERT INTO gps(nombre, latitud, longitud) VALUES(nombre, latitud, longitud);
 END //
 DELIMITER ;
 /*FIN de Procedure para insertar datos en GPS*/
@@ -173,10 +174,15 @@ CALL showTienda('%');
 /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm     Inicio de Tabla y procedures de refrigerador*/
 SELECT * FROM refrigerador;
 
-INSERT INTO refrigerador VALUES (NULL,1073,'Refrigerador de doble puerta con cocacolas','latitud y longitud',1);
-call InsertarRefrigerador(1345,'Refrigerador simple de jugos','latitud y longitud',2); 
+INSERT INTO refrigerador VALUES (NULL,1073,'Refrigerador de doble puerta con cocacolas',1,1);
+call InsertarRefrigerador(1345,'Refrigerador simple de jugos',1,1); 
 CALL showRefrigerador('%');
 /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm      FIN de Tabla y procedures de tienda*/
 
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm     Inicio de Tabla y procedures de GPS*/
+INSERT INTO gps VALUES (NULL, 'gps 2', -100000, 100000);
+call InsertarGPS();
+SELECT * FROM gps;
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmm     FIN de Tabla y procedures de GPS*/
 
 
